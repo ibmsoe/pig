@@ -34,7 +34,7 @@ Build and run Pig on Power
 ==========================
 
 For building pig, issue the command "ant jar". By default, pig will 
-build against Hadoop1 which here refers to 1.0.4. To build aganst 
+build against Hadoop1 which here refers to 1.0.4. To build against 
 Hadoop2 (2.0.3), execute "ant jar -Dhadoopversion=23".
 
 To run the unit test, execute "ant test".
