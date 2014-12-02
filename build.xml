@@ -386,7 +386,7 @@
             <include name="avro-mapred-${avro.version}*.jar"/>
             <include name="trevni-core-${avro.version}.jar"/>
             <include name="trevni-avro-${avro.version}.jar"/>
-            <include name="snappy-java-${snappy.version}.jar"/>
+            <include name="snappy-java-${snappy-java.version}.jar"/>
             <include name="asm*.jar"/>
         </patternset>
     </fileset>
