@@ -279,6 +279,13 @@
       <exclude org="asm" module="asm"/>
     </dependency>
 
+    <!-- To resolve java.lang.NoClassDefFoundError: org/apache/hadoop/hbase/procedure2/Procedure when running TestHBaseStorage.
+         Procedure V2 is new and initially dropped into hbase 1.1 -->
+    <dependency org="org.apache.hbase" name="hbase-procedure" rev="${hbase95.version}" conf="hbase95->master">
+      <artifact name="hbase-procedure" type="jar"/>
+      <!--<artifact name="hbase-procedure" type="test-jar" ext="jar" m:classifier="tests"/>-->
+    </dependency>
+
     <!-- HBase dependency in format for releases higher or equal to 0.95 -->
     <dependency org="org.apache.hbase" name="hbase-client" rev="${hbase95.version}" conf="hbase95->master">
       <artifact name="hbase-client" type="jar"/>
